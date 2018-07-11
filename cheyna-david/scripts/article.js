@@ -1,6 +1,6 @@
 'use strict';
 
-$(document).ready(function (callbackfn, thisArg){
+$(document).ready(function (){
 
   let articles = [];
 
@@ -29,11 +29,15 @@ $(document).ready(function (callbackfn, thisArg){
   * elements with a class of template a display of none so that our template does not display in the browser.
   * But, we also need to make sure we're not accidentally hiding our cloned article.
   */
-
+    $newArticle.removeClass('template');
     if (!this.publishedOn) $newArticle.addClass('draft');
     $newArticle.attr('data-category', this.category);
 
+    $newArticle.find('h1').html(this.author);
+    $newArticle.find('address a').attr('href', this.authorUrl);
     $newArticle.find('h1').html(this.title);
+    $newArticle.find('.article-body').html(this.body);
+    $newArticle.find('time').attr('datetime', this.publishedOn);
 
     /* TODO: Now use jQuery traversal and setter methods to fill in the rest of the current template clone with values of the properties of this particular Article instance.
     We need to fill in:
@@ -55,11 +59,11 @@ $(document).ready(function (callbackfn, thisArg){
   });
 
   // TODO: Refactor these for loops using the .forEach() array method.
-    rawData.forEach(function(element) {
-        articles.push(new Article(element));
-    })
+  rawData.forEach(function(element) {
+    articles.push(new Article(element));
+  })
 
-    articles.forEach(function(rawData) {
-      $('#articles').append(rawData.toHtml());
-    })
+  articles.forEach(function(rawData) {
+    $('#articles').append(rawData.toHtml());
+  })
 });
