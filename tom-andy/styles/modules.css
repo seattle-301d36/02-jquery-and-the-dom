@@ -85,3 +85,9 @@ a {
       padding-left: 10px;
    }
 }
+.template {
+  display: none;
+}
+.draft{
+  display:block;
+}
