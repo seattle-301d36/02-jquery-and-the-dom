@@ -1,0 +1,44 @@
+
+.menu:hover + test {
+  color: #444;
+}
+
+address, time {
+  display: inline;
+  
+}
+
+.by-line {
+  color: #7e7d79;
+  text-decoration-line: none;
+
+  font-size: 1.45em;
+}
+
+.by-line a {
+  text-decoration-line: none;
+  color: #7e7d79;
+  font-weight: bold;
+}
+
+.icon-menu {
+  font-size: 3.75em;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+.template {
+  display: none;
+}
+
+.published {
+  display: block;
+}
+
+
+@media only screen and (min-width: 640px) {
+  .icon-menu {
+    display: none;
+  }
+}
