@@ -1,0 +1,37 @@
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+main {
+  padding: 5%;
+}
+h1, h2 {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.75em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+p {
+  font-size: 1.45em;
+  line-height: 1.35em;
+}
+
+footer {
+  text-align: center;
+  padding: 5%;
+}
