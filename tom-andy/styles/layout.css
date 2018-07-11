@@ -1,0 +1,29 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.heading-group-h1 {
+  background-color: #FFFF99;
+  margin: 0;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+address, a {
+  display: inline;
+}
+
+h2 {
+  padding-top: 6px;
+}
+
+header h1 {
+  padding-top: 0;
+}
+
+section h1 {
+  padding-top: 15px;
+}
