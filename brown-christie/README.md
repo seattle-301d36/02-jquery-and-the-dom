@@ -1,7 +1,9 @@
 # Project Name
 
-**Author**: Your Name Goes Here
+**Author**: Matthew Brown; J Christie
 **Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
+
+Styles imported from Anyan-Brown lab from 10JUL18 
 
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 301 class. (i.e. What's your problem domain?) -->
