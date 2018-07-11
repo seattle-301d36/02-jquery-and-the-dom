@@ -1,6 +1,6 @@
 'use strict';
 
-$(document).ready(function(){
+$(document).ready(function (callbackfn, thisArg){
 
   let articles = [];
 
@@ -33,8 +33,8 @@ $(document).ready(function(){
     if (!this.publishedOn) $newArticle.addClass('draft');
     $newArticle.attr('data-category', this.category);
 
-    // $('h1').html(this.title);
-  
+    $newArticle.find('h1').html(this.title);
+
     /* TODO: Now use jQuery traversal and setter methods to fill in the rest of the current template clone with values of the properties of this particular Article instance.
     We need to fill in:
       1. author name,
@@ -55,13 +55,11 @@ $(document).ready(function(){
   });
 
   // TODO: Refactor these for loops using the .forEach() array method.
-  console.log(rawData);
-  for(let i = 0; i < rawData.length; i++) {
-    articles.push(new Article(rawData[i]));
-  }
+    rawData.forEach(function(element) {
+        articles.push(new Article(element));
+    })
 
-  for(let i = 0; i < articles.length; i++) {
-    $('#articles').append(articles[i].toHtml());
-  }
-
+    articles.forEach(function(rawData) {
+      $('#articles').append(rawData.toHtml());
+    })
 });
