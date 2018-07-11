@@ -1,6 +1,8 @@
 9:24 AM 7/11/2018  initial config set up 
 initial file configuration set up #2
 
+11:02 AM 7/11/2018 push to GitHub- switching Driver to J christie
+
 Single-line Summary
 Today, _ and _ paired together. It took about _
 

@@ -5,8 +5,6 @@ let articles = [];
 // COMMENT: What is the purpose of the following function? Why is its name capitalized? Explain the context of "this" within the function. What does "rawDataObj" represent?
 // The follwing function is the constructor Object - this function will create each object form the blog articles.js 
 
-    publishedOn: '2015-11-05',
-    publishedOn: '2015-11-05',
 function Article (title, category,author,authorUrl,publishedOn,body) {
   this.title=title;
   this.category=category;
@@ -43,10 +41,12 @@ Article.prototype.toHtml = function() {
   return $newArticle;
 };
 
+
 rawData.sort(function(a,b) {
   // REVIEW: Take a look at this sort method; This may be the first time we've seen it. Look at the docs and think about how the dates would be sorted if the callback were not included in this method.
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
+
 
 // TODO: Refactor these for loops using the .forEach() array method.
 
