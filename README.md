@@ -69,27 +69,25 @@ _Your repository must include:_
 ## Documentation
 _Your README.md must include:_
 
-```md
-# Project Name
+# jQuery and the Dom
 
-**Author**: Your Name Goes Here
-**Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
+**Author**: Brandon and Max
+**Version**: 1.2.0 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for a Code Fellows 301 class. (i.e. What's your problem domain?) -->
+<!-- This application allows the script to add the articles into the DOM rather than being hardcoded into the html. -->
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+<!-- Use of jQuery is necessary for understanding what is going on. To change the output of the articles, one would need to modify the blogArticles.js file, adding their own information and body text. This would be automatically appending to the website -->
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+<!-- The script is pulling out the template, cloning it, modifying it with specific article data, then re-appending it.-->
 
 ## Change Log
-<!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
-
+<!-- 07-11-18 9:00am: Cloned initial files and started work on the html
+07-11-18 10:00am: worked through most TODOs except for re-appending the information on the clone
+07-11-18 11:00am: finished everything!
 ## Credits and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+<!-- Use of MIT LICENSE -->
 -->
 ```
