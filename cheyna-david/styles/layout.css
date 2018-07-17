@@ -1,0 +1,43 @@
+.heading-group-h1 {
+    background-color: #FFFF99;
+    margin-top: 0;
+}
+
+section h1 {
+    margin-top: 0;
+    padding-top: 15px;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.icon-menu {
+    position: absolute;
+    text-align: right;
+    top: 5px;
+    right: 5px;
+}
+
+.icon-links ul{
+    display: none;
+}
+
+.icon-links:hover ul {
+    display: block;
+}
+
+@media only screen and (min-width: 600px) {
+    .icon-links ul {
+        display: block;
+    }
+    .icon-links ul li {
+        outline: dotted 3px black;
+        display: inline;
+        margin-right: 40px;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+}
