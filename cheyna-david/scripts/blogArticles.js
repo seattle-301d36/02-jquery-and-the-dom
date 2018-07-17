@@ -1,7 +1,11 @@
 'use strict';
 
-// COMMENT: How is this data utilized within our blog app? What is the structure of this data (your response should include the terms "object", "array", and "key/value pairs")?
-// PUT YOUR RESPONSE HERE
+// TODone COMMENT: How is this data utilized within our blog app? What is the structure of this data (your response should include the terms "object", "array", and "key/value pairs")?
+// ANS: This data simulates application data that would typically be stored and managed within a server. In this case,
+// it represents instances of blog articles in an array 'rawData'. Our article.js program which acts as our model,
+// represents article objects. Those article objects, which drives the content in our html view index.html, are
+// created from the raw/simulated blog article data in this JavaScript file. The blog article details are represented
+// here as key/value pair data.
 
 let rawData = [
   {
